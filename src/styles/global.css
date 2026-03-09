@@ -1,0 +1,58 @@
+:root {
+  --bgTop: #050815;
+  --bgBottom: #07142f;
+
+  --text: #f5f7ff;
+  --muted: rgba(245, 247, 255, 0.72);
+  --muted2: rgba(245, 247, 255, 0.52);
+
+  --redDot: rgba(255, 38, 64, 0.95);
+  --blueDot: rgba(70, 110, 255, 0.55);
+
+  --btnRedTop: #b5122b;
+  --btnRedBottom: #8e0f22;
+
+  --radius: 26px;
+  --shadow: 0 26px 110px rgba(0, 0, 0, 0.7);
+
+  --max: 640px;
+  --cardMax: 480px;
+
+  --glassBg: rgba(10, 14, 30, 0.18);
+  --glassBlur: 18px;
+  --glassBorder: rgba(255, 255, 255, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue",
+    Helvetica, sans-serif;
+  color: var(--text);
+}
+
+body {
+  background:
+    radial-gradient(900px 600px at 50% 0%, rgba(70, 110, 255, 0.1), transparent 60%),
+    radial-gradient(900px 600px at 80% 20%, rgba(255, 38, 64, 0.08), transparent 62%),
+    #040610;
+}
+
+.pageShell {
+  min-height: 100vh;
+  padding: clamp(10px, 2.2vw, 18px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+button,
+input {
+  font: inherit;
+}
